@@ -14,11 +14,6 @@ Audio Echo is a browser-based, privacy-focused application created for fun, offe
 - **Simple, Intuitive Interface**: Easy-to-navigate design, suitable for users of all ages and skill levels.
 - **Visual Feedback**: Includes a noise level bar that provides visual feedback on the sound input.
 
-## For Caregivers and Babies
-
-- **Developmental Interaction**: Engage your baby with the sound of their own voice, promoting auditory development and bonding.
-- **Responsive and Stimulating**: Encourages babies to respond to and interact with their echoed sounds.
-
 ## For Language Learners
 
 - **Accent and Pronunciation Tool**: Practice and refine language skills in a private, supportive environment.
@@ -48,4 +43,3 @@ Audio Echo is a browser-based, privacy-focused application created for fun, offe
 5. **Pause and Resume**: Use the 'Pause' button to temporarily stop the recording process. Press it again to 'Resume'.
 6. **Playback and Review**: Once the recording is stopped, the app will process the captured audio. You can then listen to the playback for immediate feedback. The status will update accordingly throughout this process.
 
-# audioEcho
