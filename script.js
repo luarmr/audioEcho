@@ -8,9 +8,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     const pauseButton = document.getElementById("pause-button");
 
     let silenceThreshold = 1000;
-    let vadThreshold = 0.1;
+    let vadThreshold = 0.05;
     let isRecording = false;
     let isPaused = false;
+    let isPlayingBack = false;
     let silenceTimer = null;
     let audioChunks = [];
     let vadProcessor;
@@ -86,6 +87,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         
 
         mediaRecorder.ondataavailable = ({ data }) => {
+            if (isPaused) return;
+            if (isPlayingBack) return;
             audioChunks.push(data);
         };
 
@@ -122,7 +125,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     function handleVADProcessorMessage(data, mediaRecorder) {
-        if (data.volume > vadThreshold) {
+        if (data.volume > vadThreshold && !isPlayingBack) {
             startRecordingIfNeeded(mediaRecorder);
             resetSilenceTimer(mediaRecorder);
         } else {
@@ -164,13 +167,18 @@ document.addEventListener("DOMContentLoaded", async () => {
             playAudioBlob(audioBlob);
             audioChunks = [];
         }
-        updateStatus("Ready to record");
     }
 
     function playAudioBlob(blob) {
         const audioUrl = URL.createObjectURL(blob);
         const audio = new Audio(audioUrl);
-        audio.onended = () => updateStatus("Ready to record");
+        isPlayingBack = true;
+        audio.onended = () => {
+            setTimeout(() => {
+                updateStatus("Ready to record");
+                isPlayingBack = false;
+            }, 500);
+        };
         audio.play();
         updateStatus("Playing back");
     }

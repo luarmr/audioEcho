@@ -12,15 +12,13 @@
         <div id="status-message" class="status-message" aria-live="polite">Ready</div>
         
         <div class="slider-container">
-            <label for="threshold-slider">Threshold: <span id="threshold-value">10%</span></label>
-            <input type="range" id="threshold-slider" min="0" max="1" step="0.01" value="0.1" class="slider"
-                   aria-valuetext="10%">
+            <label for="threshold-slider">Threshold: <span id="threshold-value">5%</span></label>
+            <input type="range" id="threshold-slider" min="0" max="1" step="0.01" value="0.05" class="slider" aria-valuetext="5%">
         </div>
 
         <div class="slider-container">
             <label for="silence-slider">Silence Duration: <span id="silence-value">1s</span></label>
-            <input type="range" id="silence-slider" min="500" max="5000" step="100" value="1000" class="slider"
-                   aria-valuetext="1.0s">
+            <input type="range" id="silence-slider" min="500" max="5000" step="100" value="1000" class="slider" aria-valuetext="1.0s">
         </div>
 
         <div class="progress-container" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
