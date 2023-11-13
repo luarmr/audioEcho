@@ -1,5 +1,7 @@
 # Audio Echo: A Playful Auditory Experience
 
+[Running example](https://luarmr.github.io/audioEcho/)
+
 ## Description
 
 Baby's Echo is a browser-based, privacy-focused application created for fun, offering interactive auditory experiences. Ideal for caregivers interacting with babies, it's also beneficial for individuals looking to improve language skills, engage in speech therapy, refine musical abilities, or practice public speaking. The app operates entirely within your browser and is built using HTML, CSS, and JavaScript without relying on any external libraries, ensuring your recordings stay private and secure.
