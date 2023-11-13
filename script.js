@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const pauseButton = document.getElementById("pause-button");
 
     let silenceThreshold = 1000;
-    let vadThreshold = 0.05;
+    let vadThreshold = 0.07;
     let isRecording = false;
     let isPaused = false;
     let isPlayingBack = false;
