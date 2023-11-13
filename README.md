@@ -2,6 +2,10 @@
 
 [Running example](https://luarmr.github.io/audioEcho/)
 
+## Important Compatibility Note
+
+- **Not Compatible with iOS and Safari**: Please note that this app does not work on iOS devices and Safari browser. 
+
 ## Description
 
 Audio Echo is a browser-based, privacy-focused application created for fun, offering interactive auditory experiences. Ideal for caregivers interacting with babies, it's also beneficial for individuals looking to improve language skills, engage in speech therapy, refine musical abilities, or practice public speaking. The app operates entirely within your browser and is built using HTML, CSS, and JavaScript without relying on any external libraries, ensuring your recordings stay private and secure.
